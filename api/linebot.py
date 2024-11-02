@@ -39,7 +39,7 @@ def handle_message(event):
         confirm_template = TemplateSendMessage(
             alt_text = 'confirm template',
             template = ConfirmTemplate(
-                text = 'drink coffee?',
+                text = 'How old can drink coffee?',
                 actions = [
                     MessageAction(
                         label = 'yes',
@@ -62,11 +62,11 @@ def handle_message(event):
                 text = 'Enjoy your coffee',
                 actions = [
                     MessageAction(
-                        label = '咖啡有什麼好處',
-                        text = '讓人有精神'),
+                        label = '麵包有什麼好處',
+                        text = '讓人有飽足感'),
                     URIAction(
-                        label = '伯朗咖啡',
-                        uri = 'https://www.mrbrown.com.tw/')]
+                        label = '君城本家',
+                        uri = 'https://www.kt-bakery.com.tw/')]
                 )
             )
 
@@ -89,7 +89,7 @@ def handle_message(event):
                                 label = '咖啡有什麼好處',
                                 text = '讓人有精神'),
                             URIAction(
-                                label = '伯朗咖啡',
+                                label = 'seven eleven',
                                 uri = 'https://www.mrbrown.com.tw/')]),
                     #第二個
                     CarouselColumn(
@@ -98,8 +98,8 @@ def handle_message(event):
                         text = 'menu2',
                         actions = [
                             MessageAction(
-                                label = '咖啡有什麼好處',
-                                text = '讓人有精神'),
+                                label = '咖啡有什麼壞處',
+                                text = '讓人睡不著'),
                             URIAction(
                                 label = '伯朗咖啡',
                                 uri = 'https://www.mrbrown.com.tw/')])
